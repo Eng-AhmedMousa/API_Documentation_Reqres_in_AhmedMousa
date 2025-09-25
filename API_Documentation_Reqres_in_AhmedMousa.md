@@ -7,7 +7,9 @@
 
 
 
-<p align="center"><img src="./media/image1.jpeg" alt="API Doc Cover"></p>
+<p align="center">
+  <img src="./media/image1.jpeg" alt="API Doc Cover" width="60%">
+</p>
 </div>
 <p align="right"><strong>إعداد: أحمد موسى</strong></p>  
 <p align="right"><strong>التاريخ: 2025/09/25</strong></p>  
@@ -840,6 +842,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
