@@ -55,9 +55,7 @@
     - [10.1 مصطلحات موحّدة](#101-مصطلحات-موحّدة)  
     - [10.2 روابط مفيدة](#102-روابط-مفيدة)  
 
-</div>
-
-<div dir="rtl">
+</div><div dir="rtl">
 
 ## المقدمة {#المقدمة}
 
@@ -101,6 +99,7 @@ Reqres.in هي واجهة برمجة تطبيقات تجريبية (Mock API) ت
 ---
 
 </div>
+
 .
 
 **<span dir="rtl">المزايا الرئيسية:</span>**
@@ -773,6 +772,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
