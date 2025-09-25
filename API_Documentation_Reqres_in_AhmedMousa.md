@@ -1,104 +1,55 @@
-**(API) <span dir="rtl">توثيـق واجهـات برمجـة التطبيقــات</span>**
+<div dir="rtl">
 
-***Reqres.in <span dir="rtl">والمصادقة باستخدام واجهة</span> CRUD
-<span dir="rtl">مثال توضيحي لعمليات</span>***
+**توثيـق واجهـات برمجـة التطبيقات (API)**  
+
+***مثال توضيحي لعمليات CRUD باستخدام واجهة Reqres.in***  
 
 ![](./media/image1.jpeg)
 
-**<span dir="rtl">إعداد: أحمد موسي</span>**  
-**<span dir="rtl">التاريخ: 2025/09/25</span>**
+**إعداد: أحمد موسى**  
+**التاريخ: 2025/09/25**
 
-# <span dir="rtl">المحتويات</span>
+# المحتويات
 
-1.  [**<span dir="rtl">المقدمة</span>**](#مقدمة)
+1. [المقدمة](#المقدمة)  
+2. [المتطلبات الأساسية](#المتطلبات-الأساسية)  
+3. [نظرة عامة على واجهة Reqres.in](#نظرة-عامة-على-واجهة-reqresin)  
+   - [3.1 طبيعة الواجهة وحدود الاستخدام](#31-طبيعة-الواجهة-وحدود-الاستخدام)  
+   - [3.2 أفضل ممارسات الاختبار](#32-أفضل-ممارسات-الاختبار)  
+4. [المصادقة (Authentication / Login)](#المصادقة-authentication--login)  
+   - [4.1 الهدف](#41-الهدف)  
+   - [4.2 إرسال طلب تسجيل الدخول](#42-إرسال-طلب-تسجيل-الدخول)  
+   - [4.3 الاستجابة المتوقعة](#43-الاستجابة-المتوقعة)  
+   - [4.4 استخدام الـ Token](#44-استخدام-ال-token)  
+   - [4.5 ملاحظات مهمة](#45-ملاحظات-مهمة)  
+5. [العمليات الأساسية (CRUD) باستخدام Postman](#العمليات-الأساسية-crud-باستخدام-postman)  
+   - [GET – جلب البيانات](#get--جلب-البيانات)  
+   - [POST – إنشاء بيانات جديدة](#post--إنشاء-بيانات-جديدة)  
+   - [PUT – تعديل كامل للبيانات](#put--تعديل-كامل-للبيانات)  
+   - [PATCH – تعديل جزئي للبيانات](#patch--تعديل-جزئي-للبيانات)  
+   - [DELETE – حذف البيانات](#delete--حذف-البيانات)  
+6. [العمليات الأساسية على Resources](#العمليات-الأساسية-على-resources)  
+   - [GET – جلب الموارد](#get--جلب-الموارد)  
+   - [GET – جلب مورد واحد](#get--جلب-مورد-واحد)  
+7. [أمثلة باستخدام أمر curl](#أمثلة-باستخدام-أمر-curl)  
+   - [المصادقة (Authentication / Login)](#المصادقة-authentication--login-1)  
+   - [جلب مستخدم ومستخدمين (GET)](#جلب-مستخدم-ومستخدمين-get)  
+   - [إنشاء مستخدم (POST)](#إنشاء-مستخدم-post)  
+   - [تعديل كامل (PUT)](#تعديل-كامل-put)  
+   - [تعديل جزئي (PATCH)](#تعديل-جزئي-patch)  
+   - [حذف (DELETE)](#حذف-delete)  
+8. [معالجة الأخطاء (Error Handling)](#معالجة-الأخطاء-error-handling)  
+   - [مبادئ عامة](#مبادئ-عامة)  
+   - [رموز الحالة الشائعة](#رموز-الحالة-الشائعة)  
+   - [مسار تشخيص سريع (Troubleshooting)](#مسار-تشخيص-سريع-troubleshooting)  
+   - [أفضل ممارسات التعامل مع الأخطاء في العميل](#أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل)  
+9. [التصفح (Pagination)](#التصفح-pagination)  
+10. [الملاحق](#الملاحق)  
+    - [مصطلحات موحدة](#مصطلحات-موحدة)  
+    - [روابط مفيدة](#روابط-مفيدة)  
 
-2.  [**<span dir="rtl">المتطلبات الأساسية</span>**](#متطلبات)
+</div>
 
-3.  **[<span dir="rtl">نظرة عامة على واجهة</span>
-    Reqres.in](#نظرةعامه)  **
-    3.1 <span dir="rtl"></span> <span dir="rtl"> [طبيعة الواجهة وحدود
-    الاستخدام](#طبيعةوجهة)</span>
-
-> <span dir="rtl">3.2 [أفضل ممارسات الاختبار](#افضلممارسات)</span>
-
-4.  [**<span dir="rtl">المصادقة (</span>Authentication /
-    Login<span dir="rtl">)</span>**](#المصادقة)
-
-> ** **4**.**1 <span dir="rtl">[الهدف](#هدفمصادقة)</span>  
->  4.2 [<span dir="rtl">إرسال طلب تسجيل الدخول</span>](#ارسالطلبتس)  
->  4.3 <span dir="rtl">[الاستجابة المتوقعة](#استجابةمتوقع)</span>  
->  4.4 <span dir="rtl"></span>[<span dir="rtl">استخدام الـ</span>
-> Token](#استخدامتوكن)  
->  4.5 <span dir="rtl">[ملاحظات مهمة](#ملاحظاتمهمه)</span>
-
-5.  [**<span dir="rtl">العمليات الأساسية (</span>CRUD<span dir="rtl">)
-    باستخدام</span> Postman**](#عملياتاساسى)
-
-    1.  [GET <span dir="rtl">– جلب البيانات</span>](#جلببيانات1)
-        <span dir="rtl"></span>
-
-    2.  [POST <span dir="rtl">– إنشاء بيانات
-        جديدة</span>](#انشاءبيانان2)
-
-    3.  [PUT <span dir="rtl">– تعديل كامل للبيانات</span>](#تعديلبيان3)
-
-    4.  [PATCH <span dir="rtl">– تعديل جزئي
-        للبيانات</span>](#تعديلجزئي4)
-
-    5.  [DELETE <span dir="rtl">– حذف البيانات</span>](#حذفبيانات5)
-
-6.  [**<span dir="rtl">العمليات الأساسية</span>
-    <span dir="rtl">على</span> Resources**](#عاساسيةعريسورس)
-
-    1.  [– GET <span dir="rtl">جلب الموارد</span>](#جلب61)
-
-    2.  [– GET <span dir="rtl">جلب مورد واحد</span>](#جلب62)
-
-7.  [**<span dir="rtl">أمثلة باستخدام أمر</span> curl**](#امثلة7)
-
-    1.  [<span dir="rtl">المصادقة</span> (Authentication /
-        Login)](#مصاد71)
-
-    2.  [<span dir="rtl">جلب مستخدم و مستخدمين
-        (</span>GET<span dir="rtl">)</span>](#مصا72)
-
-    3.  [<span dir="rtl">إنشاء مستخدم
-        (</span>POST<span dir="rtl">)</span>](#مصا73)
-
-    4.  [<span dir="rtl">تعديل كامل
-        (</span>PUT<span dir="rtl">)</span>](#مصا74)
-
-    5.  [<span dir="rtl">تعديل جزئي
-        (</span>PATCH<span dir="rtl">)</span>](#مصا75)
-
-    6.  [<span dir="rtl">حذف
-        (</span>DELETE<span dir="rtl">)</span>](#مصا76)
-
-8.  [**<span dir="rtl">معالجة الأخطاء</span> (Error
-    Handling)**](#معالجه8)
-
-    1.  [<span dir="rtl">مبادئ عامة</span>](#معال81)
-
-    2.  [<span dir="rtl">رموز الحالة الشائعة</span>](#معا82)
-
-    3.  [<span dir="rtl">مسار تشخيص سريع</span>
-        (Troubleshooting)](#معا83)
-
-    4.  [<span dir="rtl">أفضل ممارسات التعامل مع الأخطاء في
-        العميل</span>](#افض84)
-
-9.  [**<span dir="rtl">التصفح
-    (</span>Pagination<span dir="rtl">)</span>**](#تص9)
-
-10. [**<span dir="rtl">الملاحق</span>**](#ملاح10)
-
-    1.  [<span dir="rtl">مصطلحات موحّدة</span>](#مصطلح101)
-
-    2.  [<span dir="rtl">روابط مفيدة</span>](#روابط102)  
-          <span dir="rtl">  
-        </span>
-
-<!-- -->
 
 1.  <span id="مقدمة"
     class="anchor"></span>**<span dir="rtl">المقدمة</span>**
@@ -854,3 +805,4 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
