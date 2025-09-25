@@ -57,91 +57,51 @@
 
 </div>
 
+<div dir="rtl">
 
+## المقدمة {#المقدمة}
 
-1.  <span id="مقدمة"
-    class="anchor"></span>**<span dir="rtl">المقدمة</span>**
+يُقدّم هذا الدليل شرحًا عمليًا لاستخدام واجهة برمجة التطبيقات التجريبية Reqres.in.  
 
-<span dir="rtl">يُقدّم هذا الدليل شرحًا عمليًا لاستخدام واجهة برمجة
-التطبيقات التجريبية</span> Reqres.in<span dir="rtl">.</span>
+يٌركّز الدليل على توضيح كيفية تنفيذ العمليات الأساسية (CRUD) وآلية المصادقة (Authentication) بالإضافة إلى معالجة الأخطاء (Error Handling) وتنظيم النتائج عبر التصفّح (Pagination).  
 
-<span dir="rtl">يٌركّز الدليل على توضيح كيفية تنفيذ العمليات
-الأساسية</span> (CRUD) <span dir="rtl">وآلية المصادقة</span>
-(Authentication) <span dir="rtl">بالإضافة إلى معالجة الأخطاء</span>
-(Error Handling) <span dir="rtl">وتنظيم النتائج عبر التصفّح</span>
-(Pagination)<span dir="rtl">.</span>
+الهدف من هذا الدليل هو تزويد المطوّر بخطوات واضحة وأمثلة عملية يمكن الاعتماد عليها لاختبار واجهات برمجة التطبيقات وفهم كيفية عملها.  
 
-<span dir="rtl">الهدف من هذا الدليل هو تزويد المطوّر بخطوات واضحة وأمثلة
-عملية يمكن الاعتماد عليها لاختبار واجهات برمجة التطبيقات وفهم كيفية
-عملها</span>.
+**الفئات المستهدفة:**  
+- المطوّرون المبتدئون الراغبون في تعلّم مبادئ REST APIs، وكذلك المطوّرون المتقدمون الذين يحتاجون إلى مرجع سريع أو أمثلة عملية.  
+- فرق العمل التي تحتاج إلى مرجع تدريبي لتجربة وبناء طلبات واجهة برمجة التطبيقات.  
 
-**<span dir="rtl">الفئات المستهدفة</span>:**
+---
 
-- <span dir="rtl">المطوّرون المبتدئون الراغبون في تعلّم مبادئ</span> REST
-  APIs<span dir="rtl">، وكذلك المطوّرون المتقدمون الذين يحتاجون إلى مرجع
-  سريع أو أمثلة عملية.</span>
+## المتطلبات الأساسية {#المتطلبات-الأساسية}
 
-- <span dir="rtl">فرق العمل التي تحتاج إلى مرجع تدريبي لتجربة وبناء
-  طلبات واجهة برمجة التطبيقات</span>.
+قبل البدء في استخدام واجهة Reqres.in، ينبغي التأكد من توافر مجموعة من المتطلبات التي تُمكّن المطوّر من تنفيذ الطلبات (Requests) ومعالجة الاستجابات (Responses) بكفاءة:  
 
-2.  <span id="متطلبات" class="anchor"></span>**<span dir="rtl">المتطلبات
-    الأساسية</span>**
+- اتصال إنترنت مستقر لضمان تنفيذ جميع العمليات دون انقطاع.  
+- أداة لاختبار واجهات برمجة التطبيقات (API Testing Tool) مثل Postman أو أي بديل مكافئ يتيح إنشاء الطلبات، إضافة الرؤوس (Headers)، إرسال البيانات عبر الجسم (Body)، واستعراض الاستجابات.  
 
-<span dir="rtl">قبل البدء في استخدام واجهة</span>
-Reqres.in<span dir="rtl">، ينبغي التأكد من توافر مجموعة من المتطلبات
-التي تُمكّن المطوّر من تنفيذ الطلبات</span> (Requests)
-<span dir="rtl">ومعالجة الاستجابات</span> (Responses)
-<span dir="rtl">بكفاءة</span>:
+> يمكن تحميل البرنامج من هنا: [Postman](https://www.postman.com/downloads/)  
 
-- <span dir="rtl">اتصال إنترنت مستقر لضمان تنفيذ جميع العمليات دون
-  انقطاع</span>.
+- يمكن الاستعانة بأداة سطر أوامر (Command Line Tool) مثل cURL لاختبار الطلبات من خلال الطرفية (Terminal)، بينما يكفي للمبتدئين الاعتماد على أداة رسومية مثل Postman في المراحل الأولى.  
+- يُفضل الإلمام بأساسيات REST APIs، بما في ذلك طرق HTTP Methods (GET، POST، PUT، PATCH، DELETE) والبنية العامة للطلبات والاستجابات.  
+- معرفة برموز حالة (HTTP Status Codes) مثل:  
+  - 200 (تم التنفيذ بنجاح)  
+  - 201 (تم إنشاء مورد جديد)  
+  - 400 (طلب غير صالح)  
+  - 401 (غير مصرح)  
+  - 404 (المورد غير موجود)  
+- إلمام بكيفية التعامل مع JSON (JavaScript Object Notation)، باعتبارها الصيغة الأساسية لتبادل البيانات بين العميل والخادم.  
 
-- <span dir="rtl">أداة لاختبار واجهات برمجة التطبيقات</span> (API
-  Testing Tool) <span dir="rtl">مثل</span> Postman <span dir="rtl">أو أي
-  بديل مكافئ يتيح إنشاء الطلبات، إضافة الرؤوس</span>
-  (Headers)<span dir="rtl">، إرسال البيانات عبر الجسم</span>
-  (Body)<span dir="rtl">، واستعراض الاستجابات</span>.
+---
 
-> <span dir="rtl">يمكن تحميل البرنامج من هنا:</span>
-> [Postman](https://www.postman.com/downloads/)
+## نظرة عامة وطبيعة الواجهة (Reqres.in) {#نظرة-عامة-وطبيعة-الواجهة-reqresin}
 
-- <span dir="rtl">يمكن الاستعانة بـ أداة سطر أوامر</span> (Command Line
-  Tool) <span dir="rtl">مثل</span> cURL <span dir="rtl">لاختبار الطلبات
-  من خلال الطرفية</span> (Terminal)<span dir="rtl">، بينما يكفي
-  للمبتدئين الاعتماد على أداة رسومية مثل</span> Postman
-  <span dir="rtl">في المراحل الأولى</span>.
+Reqres.in هي واجهة برمجة تطبيقات تجريبية (Mock API) تتيح للمطوّرين اختبار مفاهيم REST APIs في بيئة آمنة ومجانية. صُمِّمت هذه الواجهة لمحاكاة سلوك أنظمة حقيقية دون الحاجة إلى إعداد خوادم أو قواعد بيانات.  
 
-- <span dir="rtl">يُفضل الإلمام بأساسيات</span> REST
-  APIs<span dir="rtl">، بما في ذلك طرق</span> HTTP Methods
-  <span dir="rtl">، (</span>GET<span dir="rtl">،</span>POST
-  <span dir="rtl">،</span>PUT <span dir="rtl">،</span>
-  PATCH<span dir="rtl">،</span> DELETE <span dir="rtl">) والبنية العامة
-  للطلبات والاستجابات</span>.
+---
 
-- <span dir="rtl">معرفة برموز حالة</span> (HTTP Status Codes) HTTP
-  <span dir="rtl">مثل</span>:
-
-  - 200 <span dir="rtl">(تم التنفيذ بنجاح)</span>
-
-  - 201 <span dir="rtl">(تم إنشاء مورد جديد)</span>
-
-  - 400 <span dir="rtl">(طلب غير صالح)</span>
-
-  - 401 <span dir="rtl">(غير مصرح)</span>
-
-  - 404 <span dir="rtl">(المورد غير موجود)</span>
-
-- <span dir="rtl">إلمام بكيفية التعامل مع</span> JSON (JavaScript Object
-  Notation)<span dir="rtl">، باعتبارها الصيغة الأساسية لتبادل البيانات
-  بين العميل والخادم.</span>
-
-3.  <span id="نظرةعامه" class="anchor"></span> **<span dir="rtl">نظرة
-    عامة وطبيعة الواجهة</span> (Reqres.in)**
-
-Reqres.in <span dir="rtl">هي واجهة برمجة تطبيقات تجريبية</span> (Mock
-API) <span dir="rtl">تتيح للمطوّرين اختبار مفاهيم</span> REST APIs
-<span dir="rtl">في بيئة آمنة ومجانية. صُمِّمت هذه الواجهة لمحاكاة سلوك
-أنظمة حقيقية دون الحاجة إلى إعداد خوادم أو قواعد بيانات</span>.
+</div>
+.
 
 **<span dir="rtl">المزايا الرئيسية:</span>**
 
@@ -813,6 +773,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
