@@ -1,12 +1,13 @@
 <div dir="rtl">
 
-<p align="center"><strong>توثيـق واجهـات برمجـة التطبيقات (API)</strong></p>
-<p align="center"><em>مثال توضيحي لعمليات CRUD باستخدام واجهة Reqres.in</em></p>
+<p align="center"><span style="font-size:28px;"><strong>توثيـق واجهـات برمجـة التطبيقات (API)</strong></span></p>
+
+<p align="center"><span style="font-size:22px;"><strong><em>مثال توضيحي لعمليات CRUD باستخدام واجهة Reqres.in</em></strong></span></p>
 
 <p align="center"><img src="./media/image1.jpeg" alt="API Doc Cover"></p>
 
-<p align="center"><strong>إعداد: أحمد موسى</strong></p>
-<p align="center"><strong>التاريخ: 2025/09/25</strong></p>
+<p align="right"><strong>إعداد: أحمد موسى</strong></p>  
+<p align="right"><strong>التاريخ: 2025/09/25</strong></p>  
 
 ---
 
@@ -34,13 +35,13 @@
   </li>
   <li>
     <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
-    <ol dir="rtl">
+    <ul dir="rtl">
       <li><a href="#get--جلب-البيانات">GET – جلب البيانات</a></li>
       <li><a href="#post--إنشاء-بيانات-جديدة">POST – إنشاء بيانات جديدة</a></li>
       <li><a href="#put--تعديل-كامل-للبيانات">PUT – تعديل كامل للبيانات</a></li>
       <li><a href="#patch--تعديل-جزئي-للبيانات">PATCH – تعديل جزئي للبيانات</a></li>
       <li><a href="#delete--حذف-البيانات">DELETE – حذف البيانات</a></li>
-    </ol>
+    </ul>
   </li>
   <li>
     <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
@@ -836,5 +837,6 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
