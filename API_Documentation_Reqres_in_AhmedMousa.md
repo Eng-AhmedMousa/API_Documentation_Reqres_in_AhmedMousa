@@ -1,6 +1,6 @@
 <div dir="rtl">
 
-<p align="center"><span style="font-size:50px;"><strong>توثيـق واجهـات برمجـة التطبيقات (API)</strong></span></p>
+<h1 align="center"><strong>توثيـق واجهـات برمجـة التطبيقات (API)</strong></h1>
 
 <p align="center"><span style="font-size:22px;"><strong><em>مثال توضيحي لعمليات CRUD باستخدام واجهة Reqres.in</em></strong></span></p>
 
@@ -837,6 +837,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
