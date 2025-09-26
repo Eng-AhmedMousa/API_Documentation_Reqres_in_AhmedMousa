@@ -141,9 +141,6 @@ Reqres.in هي واجهة برمجة تطبيقات تجريبية (Mock API) ت
 
 ---
 
-</div>
-
-
 **<span dir="rtl">المزايا الرئيسية:</span>**
 
 - <span dir="rtl">مجانية بالكامل ولا تتطلّب إنشاء حساب</span>.
@@ -199,6 +196,8 @@ class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل
 - <span dir="rtl">احتفظ بقوالب جاهزة للطلبات</span> (Postman Collection)
   <span dir="rtl">لتسريع الاختبارات المتكررة</span>.
 
+---
+
 4.  <span id="المصادقة" class="anchor"></span>**<span dir="rtl">المصادقة
     (</span>Authentication / Login<span dir="rtl">)</span>**
 
@@ -229,7 +228,9 @@ class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل
 
 }
 
-![](./media/image2.png)
+<p align="center">
+  <img src="./media/image2.png" alt="Login Request" />
+</p>
 
 <span id="استجابةمتوقع" class="anchor"></span>**4.3
 <span dir="rtl">الاستجابة المتوقعة</span>**
@@ -237,7 +238,9 @@ class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل
 - **<span dir="rtl">عند النجاح</span> :(OK) <span dir="rtl"></span>200
   <span dir="rtl"></span>**
 
-![](./media/image3.png)
+<p align="center">
+  <img src="./media/image3.png" alt="Login Success" />
+</p>
 
 - **<span dir="rtl">في حال الفشل</span>:**
 
@@ -254,8 +257,9 @@ class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل
 
   - Authorization: Bearer \<token\>
 
-<img src="./media/image4.png" style="width:4.76852in;height:1.53704in"
-alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Screenshot 2025-09-24 220352.png" />
+<p align="center">
+  <img src="./media/image4.png" alt="Token in Headers" />
+</p>
 
 - <span dir="rtl">الطريقة البديلة فى</span> Postman
   <span dir="rtl">(اختر طريقة واحدة اى تضع القيمه فى</span> Headers
@@ -272,7 +276,9 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 > <span dir="rtl">ثم إدخال قيمة الـ</span> Token
 > <span dir="rtl">المستلمة</span>.
 
-![](./media/image5.png)
+<p align="center">
+  <img src="./media/image5.png" alt="Postman Auth" />
+</p>
 
 <span id="ملاحظاتمهمه" class="anchor"></span>**4.5
 <span dir="rtl">ملاحظات مهمة</span>**
@@ -291,7 +297,13 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
   <span dir="rtl">في الهيدر</span>:  
   x-api-key: reqres-free-v1**
 
-![](./media/image6.png)
+<p align="center">
+  <img src="./media/image6.png" alt="API Key" />
+</p>
+
+</div>
+
+
 
 5.  <span id="عملياتاساسى"
     class="anchor"></span>**<span dir="rtl">العمليات الأساسية</span>
@@ -814,6 +826,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
