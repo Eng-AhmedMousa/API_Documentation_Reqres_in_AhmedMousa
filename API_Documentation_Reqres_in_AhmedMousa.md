@@ -21,7 +21,7 @@
 
 <ol dir="rtl">
   <li>
-    <a href="#المقدمة"><b>المقدمة</b></a>
+    <a href="#المقدمة"><span style="font-size:110%;"><b>المقدمة</b></span></a>
   </li>
 
   <li>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
