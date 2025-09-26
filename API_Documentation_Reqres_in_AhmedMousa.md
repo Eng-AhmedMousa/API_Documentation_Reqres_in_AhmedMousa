@@ -91,9 +91,6 @@
 
 </div>
 
-
-
-
 <div dir="rtl">
 
 ## 1. المقدمة
@@ -142,52 +139,165 @@ Reqres.in هي واجهة برمجة تطبيقات تجريبية (Mock API) ت
 
 **<span dir="rtl">المزايا الرئيسية:</span>**
 
-- <span dir="rtl">مجانية بالكامل ولا تتطلّب إنشاء حساب</span>.  
-- <span dir="rtl">تدعم العمليات الأساسية</span> (CRUD) <span dir="rtl">عبر طرق</span> HTTP Methods<span dir="rtl">.</span>  
-- <span dir="rtl">تُوفّر بيانات جاهزة للتعامل مع كيانات مثل</span> Users <span dir="rtl">و</span> Resources<span dir="rtl">.</span>  
-- <span dir="rtl">تدعم التصفّح</span> (Pagination) <span dir="rtl">وإرجاع رموز الحالة القياسية</span> (HTTP Status Codes)<span dir="rtl">.</span>  
-- <span dir="rtl">سهلة الاستخدام عبر أدوات رسومية مثل</span> Postman <span dir="rtl">أو عبر الطرفية باستخدام</span> cURL<span dir="rtl">.</span>  
+- <span dir="rtl">مجانية بالكامل ولا تتطلّب إنشاء حساب</span>.
 
-<span dir="rtl">**الموقع الرسمي**:</span> <https://reqres.in>  
+- <span dir="rtl">تدعم العمليات الأساسية</span> (CRUD)
+  <span dir="rtl">عبر طرق</span> HTTP Methods<span dir="rtl">.</span>
 
-<span id="طبيعةوجهة" class="anchor"></span>**<span dir="rtl">3.1</span> <span dir="rtl">طبيعة الواجهة التجريبية</span>**  
+- <span dir="rtl">تُوفّر بيانات جاهزة للتعامل مع كيانات مثل</span> Users
+  <span dir="rtl">و</span> Resources<span dir="rtl">.</span>
 
-- Reqres.in <span dir="rtl">ليست قاعدة بيانات فعلية؛ الغرض منها التدريب والعرض فقط</span>.  
-- <span dir="rtl">بعد تنفيذ</span> POST <span dir="rtl">وإنشاء معرّف</span> (id)<span dir="rtl">، قد لا تتمكّن من جلب نفس العنصر لاحقًا عبر</span> GET <span dir="rtl">قد تعود الاستجابة (404</span> Not Found<span dir="rtl">).</span>  
-- <span dir="rtl">هذا السلوك متعمّد للتجارب وليس خللًا</span>.  
+- <span dir="rtl">تدعم التصفّح</span> (Pagination) <span dir="rtl">وإرجاع
+  رموز الحالة القياسية</span> (HTTP Status
+  Codes)<span dir="rtl">.</span>
 
-**<span dir="rtl">حدود الاستخدام</span> (Rate Limits)**  
+- <span dir="rtl">سهلة الاستخدام عبر أدوات رسومية مثل</span> Postman
+  <span dir="rtl">أو عبر الطرفية باستخدام</span>
+  cURL<span dir="rtl">.</span>
 
-- <span dir="rtl">قد تُحاكي الواجهة قيودًا على المعدّل (429 Too Many Requests)</span>.  
-- <span dir="rtl">عند ظهور 429، يُنصح بالانتظار فترة قصيرة ثم إعادة المحاولة</span>.  
+<span dir="rtl">**الموقع الرسمي**:</span> <https://reqres.in>
 
-<span id="افضلممارسات" class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل ممارسات الاختبار</span>**  
+<span id="طبيعةوجهة" class="anchor"></span>**<span dir="rtl">3.1</span>
+<span dir="rtl">طبيعة الواجهة التجريبية</span>**
 
-- <span dir="rtl">استخدم معرّفات ثابتة في أمثلة القراءة مثل:</span> GET /api/users/2<span dir="rtl">.</span>  
-- <span dir="rtl">افصل بين اختبارات القراءة</span> (GET) <span dir="rtl">والكتابة</span> (POST/PUT/PATCH/DELETE) <span dir="rtl">لتتبّع النتائج بسهولة</span>.  
-- <span dir="rtl">احتفظ بقوالب جاهزة للطلبات</span> (Postman Collection) <span dir="rtl">لتسريع الاختبارات المتكررة</span>.  
+- Reqres.in <span dir="rtl">ليست قاعدة بيانات فعلية؛ الغرض منها التدريب
+  والعرض فقط</span>.
+
+- <span dir="rtl">بعد تنفيذ</span> POST <span dir="rtl">وإنشاء
+  معرّف</span> (id)<span dir="rtl">، قد لا تتمكّن من جلب نفس العنصر لاحقًا
+  عبر</span> GET <span dir="rtl">قد تعود الاستجابة (404</span> Not
+  Found<span dir="rtl">).</span>
+
+- <span dir="rtl">هذا السلوك متعمّد للتجارب وليس خللًا</span>.
+
+**<span dir="rtl">حدود الاستخدام</span> (Rate Limits)**
+
+- <span dir="rtl">قد تُحاكي الواجهة قيودًا على المعدّل (429</span>Too Many
+  Requests <span dir="rtl">).</span>
+
+- <span dir="rtl">عند ظهور 429، يُنصح بالانتظار فترة قصيرة ثم إعادة
+  المحاولة</span>.
+
+<span id="افضلممارسات"
+class="anchor"></span>**<span dir="rtl">3.2</span> <span dir="rtl">أفضل
+ممارسات الاختبار</span>**
+
+- <span dir="rtl">استخدم معرّفات ثابتة في أمثلة القراءة مثل:</span> GET
+  /api/users/2)<span dir="rtl">).</span>
+
+- <span dir="rtl">افصل بين اختبارات القراءة</span> (GET)
+  <span dir="rtl">والكتابة</span> (POST/PUT/PATCH/DELETE)
+  <span dir="rtl">لتتبّع النتائج بسهولة</span>.
+
+- <span dir="rtl">احتفظ بقوالب جاهزة للطلبات</span> (Postman Collection)
+  <span dir="rtl">لتسريع الاختبارات المتكررة</span>.
 
 ---
 
-4. <span id="المصادقة" class="anchor"></span>**<span dir="rtl">المصادقة (</span>Authentication / Login<span dir="rtl">)</span>**  
+4.  <span id="المصادقة" class="anchor"></span>**<span dir="rtl">المصادقة
+    (</span>Authentication / Login<span dir="rtl">)</span>**
 
-**4**<span id="هدفمصادقة" class="anchor"></span>**.1 <span dir="rtl">الهدف من المصادقة</span>**  
-<span dir="rtl">التحقّق من هوية المستخدم والحصول على رمز أمني</span> (Token) <span dir="rtl">لاستخدامه في تفويض الطلبات اللاحقة</span>.  
+**4**<span id="هدفمصادقة" class="anchor"></span>**.1
+<span dir="rtl">الهدف من المصادقة</span>**  
+<span dir="rtl">التحقّق من هوية المستخدم والحصول على رمز أمني</span>
+(Token) <span dir="rtl">لاستخدامه في تفويض الطلبات اللاحقة</span>.
 
-<span id="ارسالطلبتس" class="anchor"></span>**4.2 <span dir="rtl">إرسال طلب تسجيل الدخول</span>**  
+<span id="ارسالطلبتس" class="anchor"></span>**4.2 <span dir="rtl">إرسال
+طلب تسجيل الدخول</span>**
 
-- <span dir="rtl">الطريقة (Method):</span> POST  
-- <span dir="rtl">المسار (Endpoint):</span> /api/login  
-- <span dir="rtl">الرؤوس (Headers):</span> Content-Type: application/json  
-- <span dir="rtl">الجسم (Body):</span> JSON  
+- <span dir="rtl">الطريقة (</span>Method<span dir="rtl">):</span> POST
 
-```json
+- <span dir="rtl">المسار</span> /api/login :(Endpoint)
+  <span dir="rtl"></span>
+
+- <span dir="rtl">الرؤوس</span> Content-Type: application/json
+  :(Headers)
+
+- <span dir="rtl">الجسم</span>
+  <span dir="rtl"></span>(Body)<span dir="rtl">:</span>JSON
+
 {
-  "email": "eve.holt@reqres.in",
-  "password": "Ahmed1-Viper@1stPass"
+
+"email": "eve.holt@reqres.in",
+
+"password": "Ahmed1-Viper@1stPass"
+
 }
 
+<p align="center">
+  <img src="./media/image2.png" alt="Login Request" />
+</p>
 
+<span id="استجابةمتوقع" class="anchor"></span>**4.3
+<span dir="rtl">الاستجابة المتوقعة</span>**
+
+- **<span dir="rtl">عند النجاح</span> :(OK) <span dir="rtl"></span>200
+  <span dir="rtl"></span>**
+
+<p align="center">
+  <img src="./media/image3.png" alt="Login Success" />
+</p>
+
+- **<span dir="rtl">في حال الفشل</span>:**
+
+  - <span dir="rtl">(بيانات ناقصة أو غير صحيحة)</span> 400 Bad Request
+
+  - <span dir="rtl">(غير مصرح) 401</span> Unauthorized
+
+<span id="استخدامتوكن" class="anchor"></span>**4.4
+<span dir="rtl">استخدام الـ</span> Token <span dir="rtl">في الطلبات
+اللاحقة</span>**
+
+- <span dir="rtl">الطريقة العامة (إضافة يدويا فى الـ</span>
+  Headers<span dir="rtl">)</span>
+
+  - Authorization: Bearer \<token\>
+
+<p align="center">
+  <img src="./media/image4.png" alt="Token in Headers" />
+</p>
+
+- <span dir="rtl">الطريقة البديلة فى</span> Postman
+  <span dir="rtl">(اختر طريقة واحدة اى تضع القيمه فى</span> Headers
+  <span dir="rtl">أو من</span> Auth Type<span dir="rtl">)</span>
+
+  - <span dir="rtl">عبر تبويب</span> Headers:
+
+> Authorization: Bearer \<token\> <span dir="rtl"></span>
+
+- <span dir="rtl">أو عبر تبويب</span> Auth:
+
+> Type: Bearer Token <span dir="rtl"></span>
+>
+> <span dir="rtl">ثم إدخال قيمة الـ</span> Token
+> <span dir="rtl">المستلمة</span>.
+
+<p align="center">
+  <img src="./media/image5.png" alt="Postman Auth" />
+</p>
+
+<span id="ملاحظاتمهمه" class="anchor"></span>**4.5
+<span dir="rtl">ملاحظات مهمة</span>**
+
+- <span dir="rtl">بما أنّ</span> Reqres.in <span dir="rtl">واجهة تجريبية،
+  بعض الطلبات قد تعمل دون الحاجة إلى</span>
+  Token<span dir="rtl">.</span>
+
+- <span dir="rtl">يبقى الـ</span> Token <span dir="rtl">صالحًا ما لم
+  يتغيّر</span>.
+
+- <span dir="rtl">لا حاجة لإرسال</span> Body <span dir="rtl">مع
+  طلبات</span> Get<span dir="rtl">.</span>
+
+- **<span dir="rtl">الطلبات تتطلّب إضافة</span> API Key
+  <span dir="rtl">في الهيدر</span>:  
+  x-api-key: reqres-free-v1**
+
+<p align="center">
+  <img src="./media/image6.png" alt="API Key" />
+</p>
+
+</div>
 
 
 5.  <span id="عملياتاساسى"
@@ -711,6 +821,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
