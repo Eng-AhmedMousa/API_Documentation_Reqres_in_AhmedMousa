@@ -69,60 +69,7 @@
 </ol>
 
 </div>
-<div dir="rtl">
 
-<h1>المحتويات</h1>
-
-<ol dir="rtl">
-  <li><a href="#المقدمة">1. المقدمة</a></li>
-  <li><a href="#المتطلبات-الأساسية">2. المتطلبات الأساسية</a></li>
-  <div style="margin-right:35px;"><a href="#21-الشرط-الأول">2.1 الشرط الأول</a></div>
-  <div style="margin-right:35px;"><a href="#22-الشرط-الثاني">2.2 الشرط الثاني</a></div>
-
-  <li><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">3. نظرة عامة وطبيعة الواجهة (Reqres.in)</a></li>
-  <div style="margin-right:35px;"><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></div>
-  <div style="margin-right:35px;"><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></div>
-
-  <li><a href="#المصادقة-authentication--login">4. المصادقة (Authentication / Login)</a></li>
-  <div style="margin-right:35px;"><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></div>
-  <div style="margin-right:35px;"><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></div>
-  <div style="margin-right:35px;"><a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></div>
-  <div style="margin-right:35px;"><a href="#44-استخدام-الـ-token">4.4 استخدام الـ Token</a></div>
-  <div style="margin-right:35px;"><a href="#45-ملاحظات-مهمة">4.5 ملاحظات مهمة</a></div>
-
-  <li><a href="#العمليات-الأساسية-crud-باستخدام-postman">5. العمليات الأساسية (CRUD) باستخدام Postman</a></li>
-  <div style="margin-right:35px;"><a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></div>
-  <div style="margin-right:35px;"><a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></div>
-  <div style="margin-right:35px;"><a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></div>
-  <div style="margin-right:35px;"><a href="#54-patch--تعديل-جزئي-للبيانات">5.4 PATCH – تعديل جزئي للبيانات</a></div>
-  <div style="margin-right:35px;"><a href="#55-delete--حذف-البيانات">5.5 DELETE – حذف البيانات</a></div>
-
-  <li><a href="#العمليات-الأساسية-على-resources">6. العمليات الأساسية على Resources</a></li>
-  <div style="margin-right:35px;"><a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></div>
-  <div style="margin-right:35px;"><a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></div>
-
-  <li><a href="#أمثلة-باستخدام-أمر-curl">7. أمثلة باستخدام أمر curl</a></li>
-  <div style="margin-right:35px;"><a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></div>
-  <div style="margin-right:35px;"><a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></div>
-  <div style="margin-right:35px;"><a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></div>
-  <div style="margin-right:35px;"><a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></div>
-  <div style="margin-right:35px;"><a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></div>
-  <div style="margin-right:35px;"><a href="#76-delete--حذف">7.6 DELETE – حذف</a></div>
-
-  <li><a href="#معالجة-الأخطاء-error-handling">8. معالجة الأخطاء (Error Handling)</a></li>
-  <div style="margin-right:35px;"><a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></div>
-  <div style="margin-right:35px;"><a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></div>
-  <div style="margin-right:35px;"><a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></div>
-  <div style="margin-right:35px;"><a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></div>
-
-  <li><a href="#التصفّح-pagination">9. التصفّح (Pagination)</a></li>
-
-  <li><a href="#الملاحق">10. الملاحق</a></li>
-  <div style="margin-right:35px;"><a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></div>
-  <div style="margin-right:35px;"><a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></div>
-</ol>
-
-</div>
 
 
 
@@ -845,6 +792,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
