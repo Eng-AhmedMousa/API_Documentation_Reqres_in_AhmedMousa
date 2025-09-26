@@ -15,50 +15,421 @@
 <p align="right"><strong>التاريخ: 2025/09/25</strong></p>  
 
 ---
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل استخدام Reqres.in API</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        
+        .toc {
+            flex: 0 0 300px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-left: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            align-self: flex-start;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            min-width: 300px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .toc h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-right: 0;
+        }
+        
+        .toc li {
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .toc li:hover {
+            background-color: #e3f2fd;
+            transform: translateX(-5px);
+        }
+        
+        .toc a {
+            text-decoration: none;
+            color: #2c3e50;
+            display: block;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: #2980b9;
+        }
+        
+        .toc ul ul {
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        
+        .toc ul ul li {
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            font-size: 0.95rem;
+        }
+        
+        .code-block {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            direction: ltr;
+            text-align: left;
+            overflow-x: auto;
+        }
+        
+        .note {
+            background-color: #e3f2fd;
+            border-right: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning {
+            background-color: #ffecb3;
+            border-right: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .toc {
+                position: static;
+                max-height: none;
+                border-left: none;
+                border-bottom: 1px solid #eaeaea;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>دليل استخدام Reqres.in API</h1>
+            <p class="subtitle">دليل شامل لاختبار واجهات برمجة التطبيقات باستخدام Reqres.in</p>
+        </header>
+        
+        <div class="content">
+            <div class="main-content">
+                <h2 id="المقدمة">1. المقدمة</h2>
+                <p>يوفر هذا الدليل شرحًا مفصلاً لكيفية استخدام واجهة Reqres.in API التي تُعد منصة تجريبية مجانية لاختبار واجهات برمجة التطبيقات (APIs). تم تصميم هذه الواجهة خصيصًا للمطورين والمختبرين لممارسة وإتقان مهارات التعامل مع REST APIs دون الحاجة إلى قاعدة بيانات حقيقية.</p>
+                
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/800x400/2980b9/ffffff?text=Reqres.in+API+Diagram" alt="مخطط عمل Reqres.in API">
+                </div>
+                
+                <h2 id="المتطلبات-الأساسية">2. المتطلبات الأساسية</h2>
+                <p>قبل البدء في استخدام Reqres.in، يجب أن تكون على دراية بالمفاهيم الأساسية التالية:</p>
+                <ul>
+                    <li>مبادئ REST APIs</li>
+                    <li>طرق HTTP (GET, POST, PUT, PATCH, DELETE)</li>
+                    <li>رموز حالة HTTP</li>
+                    <li>JSON (JavaScript Object Notation)</li>
+                    <li>أدوات مثل Postman أو curl</li>
+                </ul>
+                
+                <h2 id="نظرة-عامة-وطبيعة-الواجهة-reqresin">3. نظرة عامة وطبيعة الواجهة (Reqres.in)</h2>
+                <p>Reqres.in هي واجهة API تجريبية توفر نقاط نهاية (endpoints) وهمية لمحاكاة سيناريوهات العالم الحقيقي. البيانات المخزنة ليست حقيقية ولا يتم الاحتفاظ بها بعد إجراء العمليات.</p>
+                
+                <h3 id="31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</h3>
+                <p>تم تصميم Reqres.in لتكون بيئة آمنة للتعلم والاختبار. جميع العمليات التي تقوم بها تكون مؤقتة ولا تؤثر على أي بيانات حقيقية.</p>
+                
+                <h3 id="32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</h3>
+                <p>عند اختبار API، يُنصح باتباع هذه الممارسات:</p>
+                <ul>
+                    <li>اختبار جميع حالات النجاح والفشل المتوقعة</li>
+                    <li>التحقق من صحة هياكل البيانات المرسلة والمستلمة</li>
+                    <li>اختبار أداء API تحت أحمال مختلفة</li>
+                    <li>التأكد من معالجة الأخطاء بشكل صحيح</li>
+                </ul>
+                
+                <h2 id="المصادقة-authentication--login">4. المصادقة (Authentication / Login)</h2>
+                <p>تستخدم Reqres.in نظامًا مبسطًا للمصادقة يعتمد على البريد الإلكتروني وكلمة المرور.</p>
+                
+                <h3 id="41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</h3>
+                <p>الهدف من عملية المصادقة هو التحقق من هوية المستخدم ومنحه رمزًا (Token) يستخدمه للوصول إلى الموارد المحمية.</p>
+                
+                <h3 id="42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</h3>
+                <div class="code-block">
+                    POST /api/login<br>
+                    Content-Type: application/json<br><br>
+                    {<br>
+                    &nbsp;&nbsp;"email": "eve.holt@reqres.in",<br>
+                    &nbsp;&nbsp;"password": "cityslicka"<br>
+                    }
+                </div>
+                
+                <h3 id="43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</h3>
+                <div class="code-block">
+                    HTTP/1.1 200 OK<br>
+                    Content-Type: application/json<br><br>
+                    {<br>
+                    &nbsp;&nbsp;"token": "QpwL5tke4Pnpja7X4"<br>
+                    }
+                </div>
+                
+                <h3 id="44-استخدام-الـ-token">4.4 استخدام الـ Token</h3>
+                <p>بعد الحصول على الـ Token، يمكن استخدامه في رؤوس طلبات HTTP اللاحقة للوصول إلى الموارد المحمية:</p>
+                <div class="code-block">
+                    Authorization: Bearer QpwL5tke4Pnpja7X4
+                </div>
+                
+                <h3 id="45-ملاحظات-مهمة">4.5 ملاحظات مهمة</h3>
+                <div class="note">
+                    <p>يجب استخدام البريد الإلكتروني وكلمة المرور المحددين في الوثائق الرسمية لـ Reqres.in للحصول على استجابة ناجحة.</p>
+                </div>
+                
+                <!-- سيتم إضافة الأقسام المتبقية هنا -->
+                
+                <h2 id="العمليات-الأساسية-crud-باستخدام-postman">5. العمليات الأساسية (CRUD) باستخدام Postman</h2>
+                <p>يشرح هذا القسم كيفية تنفيذ عمليات CRUD الأساسية باستخدام أداة Postman.</p>
+                
+                <h2 id="العمليات-الأساسية-على-resources">6. العمليات الأساسية على Resources</h2>
+                <p>يغطي هذا القسم العمليات المختلفة التي يمكن تنفيذها على الموارد المتاحة في Reqres.in.</p>
+                
+                <h2 id="أمثلة-باستخدام-أمر-curl">7. أمثلة باستخدام أمر curl</h2>
+                <p>يقدم هذا القبد أمثلة عملية لاستخدام أمر curl للتفاعل مع Reqres.in API.</p>
+                
+                <h2 id="معالجة-الأخطاء-error-handling">8. معالجة الأخطاء (Error Handling)</h2>
+                <p>يشرح هذا القسم كيفية التعامل مع الأخطاء المختلفة التي قد تواجهها عند استخدام API.</p>
+                
+                <h2 id="التصفّح-pagination">9. التصفّح (Pagination)</h2>
+                <p>يغطي هذا القسم كيفية التعامل مع التصفّح عند الحصول على قوائم كبيرة من البيانات.</p>
+                
+                <h2 id="الملاحق">10. الملاحق</h2>
+                <p>يحتوي هذا القسم على معلومات إضافية ومصطلحات مفيدة.</p>
+                
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/800x400/27ae60/ffffff?text=API+Workflow+Example" alt="مثال سير عمل API">
+                </div>
+            </div>
+            
+            <div class="toc">
+                <h2>فهرس المحتويات</h2>
+                <ul>
+                    <li><a href="#المقدمة">1. المقدمة</a></li>
+                    <li><a href="#المتطلبات-الأساسية">2. المتطلبات الأساسية</a></li>
+                    <li><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">3. نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
+                        <ul>
+                            <li><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></li>
+                            <li><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#المصادقة-authentication--login">4. المصادقة (Authentication / Login)</a>
+                        <ul>
+                            <li><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></li>
+                            <li><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></li>
+                            <li><a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></li>
+                            <li><a href="#44-استخدام-الـ-token">4.4 استخدام الـ Token</a></li>
+                            <li><a href="#45-ملاحظات-مهمة">4.5 ملاحظات مهمة</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#العمليات-الأساسية-crud-باستخدام-postman">5. العمليات الأساسية (CRUD) باستخدام Postman</a>
+                        <ul>
+                            <li><a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></li>
+                            <li><a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></li>
+                            <li><a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></li>
+                            <li><a href="#54-patch--تعديل-جزئي-للبيانات">5.4 PATCH – تعديل جزئي للبيانات</a></li>
+                            <li><a href="#55-delete--حذف-البيانات">5.5 DELETE – حذف البيانات</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#العمليات-الأساسية-على-resources">6. العمليات الأساسية على Resources</a>
+                        <ul>
+                            <li><a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></li>
+                            <li><a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#أمثلة-باستخدام-أمر-curl">7. أمثلة باستخدام أمر curl</a>
+                        <ul>
+                            <li><a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></li>
+                            <li><a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></li>
+                            <li><a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></li>
+                            <li><a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></li>
+                            <li><a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></li>
+                            <li><a href="#76-delete--حذف">7.6 DELETE – حذف</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#معالجة-الأخطاء-error-handling">8. معالجة الأخطاء (Error Handling)</a>
+                        <ul>
+                            <li><a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></li>
+                            <li><a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></li>
+                            <li><a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></li>
+                            <li><a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#التصفّح-pagination">9. التصفّح (Pagination)</a></li>
+                    <li><a href="#الملاحق">10. الملاحق</a>
+                        <ul>
+                            <li><a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></li>
+                            <li><a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>دليل استخدام Reqres.in API &copy; 2023. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
 
-<div dir="rtl">
-
-# المحتويات
-
-1. [المقدمة](#المقدمة)  
-2. [المتطلبات الأساسية](#المتطلبات-الأساسية)  
-3. [نظرة عامة وطبيعة الواجهة (Reqres.in)](#نظرة-عامة-وطبيعة-الواجهة-reqresin)  
-   - [3.1 طبيعة الواجهة التجريبية](#31-طبيعة-الواجهة-التجريبية)  
-   - [3.2 أفضل ممارسات الاختبار](#32-أفضل-ممارسات-الاختبار)  
-4. [المصادقة (Authentication / Login)](#المصادقة-authentication--login)  
-   - [4.1 الهدف من المصادقة](#41-الهدف-من-المصادقة)  
-   - [4.2 إرسال طلب تسجيل الدخول](#42-إرسال-طلب-تسجيل-الدخول)  
-   - [4.3 الاستجابة المتوقعة](#43-الاستجابة-المتوقعة)  
-   - [4.4 استخدام الـ Token](#44-استخدام-الـ-token)  
-   - [4.5 ملاحظات مهمة](#45-ملاحظات-مهمة)  
-5. [العمليات الأساسية (CRUD) باستخدام Postman](#العمليات-الأساسية-crud-باستخدام-postman)  
-   - [5.1 GET – جلب البيانات](#51-get--جلب-البيانات)  
-   - [5.2 POST – إنشاء بيانات جديدة](#52-post--إنشاء-بيانات-جديدة)  
-   - [5.3 PUT – تعديل كامل للبيانات](#53-put--تعديل-كامل-للبيانات)  
-   - [5.4 PATCH – تعديل جزئي للبيانات](#54-patch--تعديل-جزئي-للبيانات)  
-   - [5.5 DELETE – حذف البيانات](#55-delete--حذف-البيانات)  
-6. [العمليات الأساسية على Resources](#العمليات-الأساسية-على-resources)  
-   - [6.1 GET – جلب قائمة الموارد](#61-get--جلب-قائمة-الموارد)  
-   - [6.2 GET – جلب مورد واحد](#62-get--جلب-مورد-واحد)  
-7. [أمثلة باستخدام أمر curl](#أمثلة-باستخدام-أمر-curl)  
-   - [7.1 المصادقة (Authentication / Login)](#71-المصادقة-authentication--login)  
-   - [7.2 GET – جلب مستخدم](#72-get--جلب-مستخدم)  
-   - [7.3 POST – إنشاء مستخدم](#73-post--إنشاء-مستخدم)  
-   - [7.4 PUT – تعديل كامل](#74-put--تعديل-كامل)  
-   - [7.5 PATCH – تعديل جزئي](#75-patch--تعديل-جزئي)  
-   - [7.6 DELETE – حذف](#76-delete--حذف)  
-8. [معالجة الأخطاء (Error Handling)](#معالجة-الأخطاء-error-handling)  
-   - [8.1 مبادئ عامة](#81-مبادئ-عامة)  
-   - [8.2 رموز الحالة الشائعة](#82-رموز-الحالة-الشائعة)  
-   - [8.3 مسار تشخيص سريع (Troubleshooting)](#83-مسار-تشخيص-سريع-troubleshooting)  
-   - [8.4 أفضل ممارسات التعامل مع الأخطاء في العميل](#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل)  
-9. [التصفّح (Pagination)](#التصفّح-pagination)  
-10. [الملاحق](#الملاحق)  
-    - [10.1 مصطلحات موحّدة](#101-مصطلحات-موحّدة)  
-    - [10.2 روابط مفيدة](#102-روابط-مفيدة)  
-
-</div>
-
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight current section in TOC
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.main-content h2, .main-content h3');
+            const scrollPos = window.scrollY || document.documentElement.scrollTop;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                    document.querySelectorAll('.toc a').forEach(link => {
+                        link.parentElement.classList.remove('active');
+                    });
+                    
+                    const activeLink = document.querySelector(`.toc a[href="#${sectionId}"]`);
+                    if (activeLink) {
+                        activeLink.parentElement.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
 
 <div dir="rtl">
 
@@ -779,6 +1150,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
