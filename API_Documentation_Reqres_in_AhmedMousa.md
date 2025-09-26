@@ -62,7 +62,7 @@
 
   <li>
     <a href="#أمثلة-باستخدام-أمر-curl">أمثلة باستخدام أمر curl</a>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></div>
+    <div>&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp<a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></div>
     <div>&nbsp;&nbsp;&nbsp;<a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></div>
     <div>&nbsp;&nbsp;&nbsp;<a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></div>
     <div>&nbsp;&nbsp;&nbsp;<a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></div>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
