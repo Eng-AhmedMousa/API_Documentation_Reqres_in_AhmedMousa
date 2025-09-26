@@ -45,14 +45,14 @@
     <div>&nbsp;&nbsp;&nbsp;<a href="#45-ملاحظات-مهمة">4.5 ملاحظات مهمة</a></div>
   </li>
 
-  <li>
-    <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></div>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></div>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></div>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#54-patch--تعديل-جزئي-للبيانات">5.4 PATCH – تعديل جزئي للبيانات</a></div>
-    <div>&nbsp;&nbsp;&nbsp;<a href="#55-delete--حذف-البيانات">5.5 DELETE – حذف البيانات</a></div>
-  </li>
+<li>
+  <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
+  <div>&nbsp;&nbsp;&nbsp;<a href="#sec-5-1">5.1 GET – جلب البيانات</a></div>
+  <div>&nbsp;&nbsp;&nbsp;<a href="#sec-5-2">5.2 POST – إنشاء بيانات جديدة</a></div>
+  <div>&nbsp;&nbsp;&nbsp;<a href="#sec-5-3">5.3 PUT – تعديل كامل للبيانات</a></div>
+  <div>&nbsp;&nbsp;&nbsp;<a href="#sec-5-4">5.4 PATCH – تعديل جزئي للبيانات</a></div>
+  <div>&nbsp;&nbsp;&nbsp;<a href="#sec-5-5">5.5 DELETE – حذف البيانات</a></div>
+</li>
 
   <li>
     <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
