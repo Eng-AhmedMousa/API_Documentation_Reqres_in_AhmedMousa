@@ -77,9 +77,7 @@
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></div>
   </li>
-
-  <a href="#التصفّح-pagination"><b>التصفّح (Pagination)</b></a>
-
+    <a href="#التصفّح-pagination"><b>التصفّح (Pagination)</b></a>
   <li>
     <a href="#الملاحق"><b>الملاحق</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></div>
@@ -812,6 +810,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
