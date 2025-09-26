@@ -15,131 +15,79 @@
 <p align="right"><strong>التاريخ: 2025/09/25</strong></p>  
 
 ---
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فهرس المحتويات</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .toc {
-            direction: rtl;
-            text-align: right;
-        }
-        .toc ol {
-            padding-right: 20px;
-        }
-        .toc li {
-            margin-bottom: 10px;
-        }
-        .toc a {
-            text-decoration: none;
-            color: #2980b9;
-            transition: color 0.3s;
-        }
-        .toc a:hover {
-            color: #e74c3c;
-            text-decoration: underline;
-        }
-        .toc ul {
-            list-style-type: none;
-            padding-right: 20px;
-            margin-top: 5px;
-        }
-        .toc ul li {
-            margin-bottom: 5px;
-            font-size: 0.95em;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>فهرس المحتويات</h1>
-        
-        <div class="toc">
-            <ol>
-                <li><a href="#المقدمة">المقدمة</a></li>
-                <li><a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a></li>
-                <li><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
-                    <ul>
-                        <li><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></li>
-                        <li><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></li>
-                    </ul>
-                </li>
-                <li><a href="#المصادقة-authentication--login">المصادقة (Authentication / Login)</a>
-                    <ul>
-                        <li><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></li>
-                        <li><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></li>
-                        <li><a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></li>
-                        <li><a href="#44-استخدام-الـ-token">4.4 استخدام الـ Token</a></li>
-                        <li><a href="#45-ملاحظات-مهمة">4.5 ملاحظات مهمة</a></li>
-                    </ul>
-                </li>
-                <li><a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
-                    <ul>
-                        <li><a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></li>
-                        <li><a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></li>
-                        <li><a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></li>
-                        <li><a href="#54-patch--تعديل-جزئي-للبيانات">5.4 PATCH – تعديل جزئي للبيانات</a></li>
-                        <li><a href="#55-delete--حذف-البيانات">5.5 DELETE – حذف البيانات</a></li>
-                    </ul>
-                </li>
-                <li><a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
-                    <ul>
-                        <li><a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></li>
-                        <li><a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></li>
-                    </ul>
-                </li>
-                <li><a href="#أمثلة-باستخدام-أمر-curl">أمثلة باستخدام أمر curl</a>
-                    <ul>
-                        <li><a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></li>
-                        <li><a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></li>
-                        <li><a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></li>
-                        <li><a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></li>
-                        <li><a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></li>
-                        <li><a href="#76-delete--حذف">7.6 DELETE – حذف</a></li>
-                    </ul>
-                </li>
-                <li><a href="#معالجة-الأخطاء-error-handling">معالجة الأخطاء (Error Handling)</a>
-                    <ul>
-                        <li><a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></li>
-                        <li><a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></li>
-                        <li><a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></li>
-                        <li><a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></li>
-                    </ul>
-                </li>
-                <li><a href="#التصفّح-pagination">9. التصفّح (Pagination)</a></li>
-                <li><a href="#الملاحق">10. الملاحق</a>
-                    <ul>
-                        <li><a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></li>
-                        <li><a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-    </div>
-</body>
-</html>
+<div dir="rtl">
+
+<h1>المحتويات</h1>
+
+<ol dir="rtl">
+  <li><a href="#المقدمة">المقدمة</a></li>
+  <li><a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a></li>
+  <li>
+    <a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
+    <ul dir="rtl">
+      <li><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></li>
+      <li><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#المصادقة-authentication--login">المصادقة (Authentication / Login)</a>
+    <ul dir="rtl">
+      <li><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></li>
+      <li><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></li>
+      <li><a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></li>
+      <li><a href="#44-استخدام-الـ-token">4.4 استخدام الـ Token</a></li>
+      <li><a href="#45-ملاحظات-مهمة">4.5 ملاحظات مهمة</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
+    <ul dir="rtl">
+      <li><a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></li>
+      <li><a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></li>
+      <li><a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></li>
+      <li><a href="#54-patch--تعديل-جزئي-للبيانات">5.4 PATCH – تعديل جزئي للبيانات</a></li>
+      <li><a href="#55-delete--حذف-البيانات">5.5 DELETE – حذف البيانات</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
+    <ul dir="rtl">
+      <li><a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></li>
+      <li><a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#أمثلة-باستخدام-أمر-curl">أمثلة باستخدام أمر curl</a>
+    <ul dir="rtl">
+      <li><a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></li>
+      <li><a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></li>
+      <li><a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></li>
+      <li><a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></li>
+      <li><a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></li>
+      <li><a href="#76-delete--حذف">7.6 DELETE – حذف</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#معالجة-الأخطاء-error-handling">معالجة الأخطاء (Error Handling)</a>
+    <ul dir="rtl">
+      <li><a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></li>
+      <li><a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></li>
+      <li><a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></li>
+      <li><a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></li>
+    </ul>
+  </li>
+  <li><a href="#التصفّح-pagination">التصفّح (Pagination)</a></li>
+  <li>
+    <a href="#الملاحق">الملاحق</a>
+    <ul dir="rtl">
+      <li><a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></li>
+      <li><a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+
 
 <div dir="rtl">
 
