@@ -81,7 +81,7 @@
   <li><a href="#التصفّح-pagination">التصفّح (Pagination)</a></li>
 
   <li>
-    <a href="#الملاحق">&nbsp;&nbsp;الملاحق</a>
+      <a href="#الملاحق">الملاحق</a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></div>
   </li>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
