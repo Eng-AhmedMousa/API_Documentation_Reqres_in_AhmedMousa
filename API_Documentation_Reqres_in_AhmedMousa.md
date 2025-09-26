@@ -18,25 +18,25 @@
 <div dir="rtl">
 
 <h1>المحتويات</h1>
-1. المقدمة 
-2.المطلب
-  2.1 سس
-    2.2 العاب
 <ol dir="rtl">
   <li><a href="#المقدمة">المقدمة</a></li>
-  <li><a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a></li>
-  <ol dir="rtl" style="list-style-type: decimal;">
+  <li>
+    <a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a>
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#21-الشرط-الأول">2.1 الشرط الأول</a></li>
       <li><a href="#22-الشرط-الثاني">2.2 الشرط الثاني</a></li>
-    </ol>
-<li><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a></li>
-<div style="margin-right:20px;"><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></div>
-<div style="margin-right:20px;"><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></div>
-
-
+    </ul>
+  </li>
+  <li>
+    <a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
+      <li><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></li>
+      <li><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></li>
+    </ul>
+  </li>
   <li>
     <a href="#المصادقة-authentication--login">المصادقة (Authentication / Login)</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></li>
       <li><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></li>
       <li><a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></li>
@@ -46,7 +46,7 @@
   </li>
   <li>
     <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#51-get--جلب-البيانات">5.1 GET – جلب البيانات</a></li>
       <li><a href="#52-post--إنشاء-بيانات-جديدة">5.2 POST – إنشاء بيانات جديدة</a></li>
       <li><a href="#53-put--تعديل-كامل-للبيانات">5.3 PUT – تعديل كامل للبيانات</a></li>
@@ -56,14 +56,14 @@
   </li>
   <li>
     <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></li>
       <li><a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></li>
     </ul>
   </li>
   <li>
     <a href="#أمثلة-باستخدام-أمر-curl">أمثلة باستخدام أمر curl</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></li>
       <li><a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></li>
       <li><a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></li>
@@ -74,7 +74,7 @@
   </li>
   <li>
     <a href="#معالجة-الأخطاء-error-handling">معالجة الأخطاء (Error Handling)</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></li>
       <li><a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></li>
       <li><a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></li>
@@ -84,7 +84,7 @@
   <li><a href="#التصفّح-pagination">التصفّح (Pagination)</a></li>
   <li>
     <a href="#الملاحق">الملاحق</a>
-    <ul dir="rtl">
+    <ul dir="rtl" style="list-style-type:none; padding-right:20px;">
       <li><a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></li>
       <li><a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></li>
     </ul>
@@ -92,6 +92,7 @@
 </ol>
 
 </div>
+
 
 
 <div dir="rtl">
@@ -813,6 +814,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
