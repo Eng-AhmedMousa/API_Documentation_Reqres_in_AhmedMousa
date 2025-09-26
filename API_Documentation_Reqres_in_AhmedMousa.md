@@ -14,7 +14,9 @@
 <p align="right"><strong>إعداد: أحمد موسى</strong></p>  
 <p align="right"><strong>التاريخ: 2025/09/25</strong></p>  
 
----<div dir="rtl">
+---
+
+<div dir="rtl">
 
 # المحتويات
 
@@ -777,6 +779,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
