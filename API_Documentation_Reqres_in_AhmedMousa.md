@@ -22,6 +22,10 @@
 <ol dir="rtl">
   <li><a href="#المقدمة">المقدمة</a></li>
   <li><a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a></li>
+  <ol dir="rtl" style="list-style-type: decimal;">
+      <li><a href="#21-الشرط-الأول">2.1 الشرط الأول</a></li>
+      <li><a href="#22-الشرط-الثاني">2.2 الشرط الثاني</a></li>
+    </ol>
 <li><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a></li>
 <div style="margin-right:20px;"><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></div>
 <div style="margin-right:20px;"><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></div>
@@ -806,6 +810,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
