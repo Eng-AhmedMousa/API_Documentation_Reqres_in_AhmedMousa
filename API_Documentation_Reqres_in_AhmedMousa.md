@@ -50,14 +50,14 @@
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-1">5.1 GET – جلب البيانات</a></div>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-2">5.2 POST – إنشاء بيانات جديدة</a></div>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-3">5.3 PUT – تعديل كامل للبيانات</a></div>
-  <divdir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-4">5.4 PATCH – تعديل جزئي للبيانات</a></div>
+  <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-4">5.4 PATCH – تعديل جزئي للبيانات</a></div>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-5">5.5 DELETE – حذف البيانات</a></div>
 </li>
 
   <li>
     <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></div>
   </li>
 
   <li>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
