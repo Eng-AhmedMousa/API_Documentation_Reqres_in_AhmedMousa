@@ -93,25 +93,6 @@
 
 </div>
 
-<div dir="rtl">
-
-<h1>المحتويات</h1>
-
-<p style="margin:0;"><a href="#المقدمة">1. المقدمة</a></p>
-<p style="margin:0;"><a href="#المتطلبات-الأساسية">2. المتطلبات الأساسية</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#21-الشرط-الأول">2.1 الشرط الأول</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#22-الشرط-الثاني">2.2 الشرط الثاني</a></p>
-
-<p style="margin:0;"><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">3. نظرة عامة وطبيعة الواجهة (Reqres.in)</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></p>
-
-<p style="margin:0;"><a href="#المصادقة-authentication--login">4. المصادقة (Authentication / Login)</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></p>
-<p style="margin:0; margin-right:20px;"><a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></p>
-<!-- ... كمّل بنفس النمط ... -->
-
-</div>
 
 <div dir="rtl">
 
@@ -832,6 +813,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
