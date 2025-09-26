@@ -47,11 +47,11 @@
 
 <li>
   <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-1">5.1 GET – جلب البيانات</a></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-2">5.2 POST – إنشاء بيانات جديدة</a></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-3">5.3 PUT – تعديل كامل للبيانات</a></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-4">5.4 PATCH – تعديل جزئي للبيانات</a></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-5">5.5 DELETE – حذف البيانات</a></div>
+  <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-1">5.1 GET – جلب البيانات</a></div>
+  <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-2">5.2 POST – إنشاء بيانات جديدة</a></div>
+  <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-3">5.3 PUT – تعديل كامل للبيانات</a></div>
+  <divdir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-4">5.4 PATCH – تعديل جزئي للبيانات</a></div>
+  <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-5">5.5 DELETE – حذف البيانات</a></div>
 </li>
 
   <li>
@@ -65,17 +65,17 @@
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#76-delete--حذف">7.6 DELETE – حذف</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#74-put--تعديل-كامل">7.4 PUT – تعديل كامل</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#75-patch--تعديل-جزئي">7.5 PATCH – تعديل جزئي</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#76-delete--حذف">7.6 DELETE – حذف</a></div>
   </li>
 
   <li>
     <a href="#معالجة-الأخطاء-error-handling">معالجة الأخطاء (Error Handling)</a>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></div>
+    <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></div>
   </li>
 
   <li><a href="#التصفّح-pagination">التصفّح (Pagination)</a></li>
@@ -812,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
