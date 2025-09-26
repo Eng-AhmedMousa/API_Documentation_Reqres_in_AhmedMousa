@@ -21,24 +21,23 @@
 
 <ol dir="rtl">
   <li>
-      <li><a href="#المقدمة"><span style="font-size:110%;"><b>المقدمة</b></span></a></li>
-
+      <a href="#المقدمة"><b>المقدمة</b></a>
   </li>
 
   <li>
-    <a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a>
+    <a href="#المتطلبات-الأساسية"><b>المتطلبات الأساسية</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#21-الشرط-الأول">2.1 الشرط الأول</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#22-الشرط-الثاني">2.2 الشرط الثاني</a></div>
   </li>
 
   <li>
-    <a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
+    <a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin"><b>نظرة عامة وطبيعة الواجهة (Reqres.in)</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></div>
   </li>
 
   <li>
-    <a href="#المصادقة-authentication--login">المصادقة (Authentication / Login)</a>
+    <a href="#المصادقة-authentication--login"><b>المصادقة (Authentication / Login)</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#41-الهدف-من-المصادقة">4.1 الهدف من المصادقة</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#42-إرسال-طلب-تسجيل-الدخول">4.2 إرسال طلب تسجيل الدخول</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#43-الاستجابة-المتوقعة">4.3 الاستجابة المتوقعة</a></div>
@@ -47,7 +46,7 @@
   </li>
 
 <li>
-  <a href="#العمليات-الأساسية-crud-باستخدام-postman">العمليات الأساسية (CRUD) باستخدام Postman</a>
+  <a href="#العمليات-الأساسية-crud-باستخدام-postman"><b>العمليات الأساسية (CRUD) باستخدام Postman</b></a>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-1">5.1 GET – جلب البيانات</a></div>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-2">5.2 POST – إنشاء بيانات جديدة</a></div>
   <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sec-5-3">5.3 PUT – تعديل كامل للبيانات</a></div>
@@ -56,13 +55,13 @@
 </li>
 
   <li>
-    <a href="#العمليات-الأساسية-على-resources">العمليات الأساسية على Resources</a>
+    <a href="#العمليات-الأساسية-على-resources"><b>العمليات الأساسية على Resources</b></a>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#61-get--جلب-قائمة-الموارد">6.1 GET – جلب قائمة الموارد</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#62-get--جلب-مورد-واحد">6.2 GET – جلب مورد واحد</a></div>
   </li>
 
   <li>
-    <a href="#أمثلة-باستخدام-أمر-curl">أمثلة باستخدام أمر curl</a>
+    <a href="#أمثلة-باستخدام-أمر-curl"><b>أمثلة باستخدام أمر curl</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#71-المصادقة-authentication--login">7.1 المصادقة (Authentication / Login)</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#72-get--جلب-مستخدم">7.2 GET – جلب مستخدم</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#73-post--إنشاء-مستخدم">7.3 POST – إنشاء مستخدم</a></div>
@@ -72,17 +71,17 @@
   </li>
 
   <li>
-    <a href="#معالجة-الأخطاء-error-handling">معالجة الأخطاء (Error Handling)</a>
+    <a href="#معالجة-الأخطاء-error-handling"><b>معالجة الأخطاء (Error Handling)</b></a>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#81-مبادئ-عامة">8.1 مبادئ عامة</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#82-رموز-الحالة-الشائعة">8.2 رموز الحالة الشائعة</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#83-مسار-تشخيص-سريع-troubleshooting">8.3 مسار تشخيص سريع (Troubleshooting)</a></div>
     <div dir="rtl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#84-أفضل-ممارسات-التعامل-مع-الأخطاء-في-العميل">8.4 أفضل ممارسات التعامل مع الأخطاء في العميل</a></div>
   </li>
 
-  <li><a href="#التصفّح-pagination">التصفّح (Pagination)</a></li>
+  <a href="#التصفّح-pagination"><b>التصفّح (Pagination)</b></a>
 
   <li>
-    <a href="#الملاحق">الملاحق</a>
+    <a href="#الملاحق"><b>الملاحق</b></a>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#101-مصطلحات-موحّدة">10.1 مصطلحات موحّدة</a></div>
     <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#102-روابط-مفيدة">10.2 روابط مفيدة</a></div>
   </li>
@@ -813,6 +812,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
