@@ -22,13 +22,10 @@
 <ol dir="rtl">
   <li><a href="#المقدمة">المقدمة</a></li>
   <li><a href="#المتطلبات-الأساسية">المتطلبات الأساسية</a></li>
-  <li>
-    <a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">نظرة عامة وطبيعة الواجهة (Reqres.in)</a>
-    <ul dir="rtl" style="list-style-type:none;">
-      <li><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></li>
-      <li><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></li>
-    </ul>
-  </li>
+  <p><a href="#نظرة-عامة-وطبيعة-الواجهة-reqresin">3. نظرة عامة وطبيعة الواجهة (Reqres.in)</a></p>
+<p style="margin-right:20px;"><a href="#31-طبيعة-الواجهة-التجريبية">3.1 طبيعة الواجهة التجريبية</a></p>
+<p style="margin-right:20px;"><a href="#32-أفضل-ممارسات-الاختبار">3.2 أفضل ممارسات الاختبار</a></p>
+
   <li>
     <a href="#المصادقة-authentication--login">المصادقة (Authentication / Login)</a>
     <ul dir="rtl">
@@ -808,6 +805,7 @@ alt="C:\Users\engra\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Scree
 
 - **<span dir="rtl">تعلم اساسيات</span> :RESTful API
   <span dir="rtl"></span>[https://restfulapi.net<span dir="rtl">/</span>](https://restfulapi.net/)**
+
 
 
 
